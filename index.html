@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Top Tracks</title>
+    <!-- Material Design Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <header class="app-bar">
+      <div class="app-bar-title">
+        <span class="material-symbols-outlined icon">music_note</span>
+        <h1>My Top Tracks</h1>
+      </div>
+      <button id="logout-button" class="btn-text" style="display: none;">
+        <span class="material-symbols-outlined">logout</span>
+        Logout
+      </button>
+    </header>
+
+    <main id="app">
+      <!-- Login Section -->
+      <section id="login-section" class="centered-view">
+        <div class="card login-card">
+          <span class="material-symbols-outlined large-icon">account_circle</span>
+          <h2>Welcome</h2>
+          <p>Discover your most played tracks on Spotify.</p>
+          <button id="login-button" class="btn-filled">
+            Login with Spotify
+          </button>
+        </div>
+      </section>
+
+      <!-- Dashboard Section -->
+      <section id="dashboard-section" class="dashboard-view" style="display: none;">
+        <div id="loading" class="loading-state">
+          <p>Fetching your top tracks...</p>
+        </div>
+        <div id="tracks-grid" class="grid-container"></div>
+      </section>
+    </main>
+  </body>
+</html>

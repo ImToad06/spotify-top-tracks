@@ -1,0 +1,32 @@
+{
+  "name": "taller-consumo-apis-rest",
+  "version": "0.0.1",
+  "description": "A minimal Material Design dashboard to demonstrate Spotify API consumption.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juan/taller-consumo-apis-rest.git"
+  },
+  "keywords": [
+    "spotify",
+    "api",
+    "material-design",
+    "typescript",
+    "vite"
+  ],
+  "author": "Juan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juan/taller-consumo-apis-rest/issues"
+  },
+  "homepage": "https://github.com/juan/taller-consumo-apis-rest#readme",
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vite": "^8.0.4"
+  }
+}
