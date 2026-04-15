@@ -1,5 +1,5 @@
-const clientId = '60eb550be4414dc4a11da33cba2faeb7'; // Replace with your Client ID
-const redirectUri = 'http://127.0.0.1:5173';
+const clientId = import.meta.env.VITE_SPOTIFY_CLIENT_ID || '60eb550be4414dc4a11da33cba2faeb7';
+const redirectUri = import.meta.env.VITE_REDIRECT_URI || 'http://127.0.0.1:5173';
 const authEndpoint = 'https://accounts.spotify.com/authorize';
 const tokenEndpoint = 'https://accounts.spotify.com/api/token';
 const scopes = ['user-top-read'];
