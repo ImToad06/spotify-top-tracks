@@ -19,8 +19,8 @@
     "typescript",
     "vite"
   ],
-  "author": "Juan",
-  "license": "MIT",
+  "author": "ImToad06 <jreyesaguilar123@gmail.com>",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/juan/taller-consumo-apis-rest/issues"
   },
